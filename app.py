@@ -132,7 +132,7 @@ def get_conversation_chain(vectorstore, target_source_chunks):
     retriever = vectorstore.as_retriever(search_kwargs={"k": target_source_chunks})
 
     llm = HuggingFaceEndpoint(
-        huggingfacehub_api_token='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',
+        huggingfacehub_api_token='Your API Key',
         repo_id="mistralai/Mistral-7B-Instruct-v0.1",
     )
 
