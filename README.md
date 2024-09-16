@@ -1,4 +1,3 @@
-Here’s an updated version of the `README.md` with a section on what has been accomplished in the project:
 
 ```markdown
 # Document Question Answering
