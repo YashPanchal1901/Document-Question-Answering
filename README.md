@@ -1,5 +1,4 @@
 
-```markdown
 # Document Question Answering
 
 This project enables users to upload documents and ask questions to retrieve relevant answers based on the document's content.
