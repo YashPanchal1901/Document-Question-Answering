@@ -4,6 +4,7 @@
 ### Overview
 
 This application provides an interface for users to ask questions about their uploaded documents. The system processes the uploaded files, splits the content into manageable chunks, stores them in a FAISS vector store, and uses a conversational AI chain to generate responses.
+You can Try it on [DocumentQA](https://document-question-answering-knztamoubehiyv39ahzbph.streamlit.app/).
 
 ### Features
 - Supports **PDF**, **CSV**, and **TXT** file uploads.
@@ -30,7 +31,7 @@ This application provides an interface for users to ask questions about their up
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/YashPanchal1901/Document-Question-Answering
-   cd <DocumentQA>
+   cd Document-Question-Answering
    ```
 
 2. **Create a Virtual Environment**:
