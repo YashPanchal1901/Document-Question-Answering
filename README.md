@@ -17,7 +17,7 @@ This application provides an interface for users to ask questions about their up
 ### Prerequisites
 
 1. **Python Version**: Python 3.9 or above.
-2. **Packages**: Install the required libraries listed in the [Installation](#installation) section.
+2. **Packages**: Install the required libraries listed in the requirements section.
 3. **HuggingFace API Key**: Obtain an API key from [HuggingFace](https://huggingface.co/settings/tokens).
 4. **Logos**: Ensure that you have the image files for the logos:
    - `attachment_73051350.jpeg`
