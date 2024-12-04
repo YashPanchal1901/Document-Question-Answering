@@ -9,10 +9,12 @@ from PIL import Image
 from langchain_huggingface import HuggingFaceEndpoint
 from langchain.chains import ConversationalRetrievalChain
 from langchain.docstore.document import Document
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.memory import ConversationBufferMemory
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
+
+api = api_key = st.secrets["HUGGINGFACEHUB_API_KEY"]
 
 ######################### HTML CSS ############################
 css = '''
@@ -132,8 +134,8 @@ def get_conversation_chain(vectorstore, target_source_chunks):
     retriever = vectorstore.as_retriever(search_kwargs={"k": target_source_chunks})
 
     llm = HuggingFaceEndpoint(
-        huggingfacehub_api_token='Your API Key',
-        repo_id="mistralai/Mistral-7B-Instruct-v0.1",
+        huggingfacehub_api_token=api,
+        repo_id="mistralai/Mistral-7B-Instruct-v0.3",
     )
 
     memory = ConversationBufferMemory(
