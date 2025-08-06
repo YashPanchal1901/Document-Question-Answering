@@ -135,7 +135,7 @@ def get_conversation_chain(vectorstore, target_source_chunks):
 
     llm = HuggingFaceEndpoint(
         huggingfacehub_api_token=api,
-        repo_id="mistralai/Mistral-7B-Instruct-v0.3",
+        repo_id="meta-llama/Llama-3.2-1B",
     )
 
     memory = ConversationBufferMemory(
@@ -238,3 +238,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
